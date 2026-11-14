@@ -58,7 +58,6 @@ they are written with a reason to `scored.rejects.csv`. Exit codes: 0 success, 1
 
 ```bash
 python -m serving.benchmark            # 1000 HTTP requests (p50/p95/p99) + batch throughput -> reports/benchmark_results.json
-python -m serving.edge_cases           # robustness table -> reports/edge_case_results.json
 python -m src.monitor --input data/sample_input.csv    # PSI / KS drift report against the training reference
 ```
 

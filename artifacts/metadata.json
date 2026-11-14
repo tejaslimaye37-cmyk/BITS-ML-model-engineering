@@ -1,6 +1,6 @@
 {
   "model_version": "1.0.0",
-  "trained_at": "2026-11-14T12:44:38+00:00",
+  "trained_at": "2026-11-14T13:03:17+00:00",
   "features": [
     "SeniorCitizen",
     "tenure",
@@ -173,7 +173,7 @@
     "lgbm": 0.6533945012153419
   },
   "versions": {
-    "python": "3.12.16",
+    "python": "3.12.0",
     "sklearn": "1.9.1",
     "lightgbm": "4.7.0"
   }
