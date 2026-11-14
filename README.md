@@ -1,8 +1,6 @@
 # Mini Production ML System: Customer Churn
 
-An end-to-end churn scoring system built for the BITS Pilani WILP ML Model Engineering assignment (Option A).
-It covers leak-free preprocessing, baselines, a class-weighted LightGBM model, serialized artifacts, an online
-FastAPI service, a batch CLI, latency and throughput profiling, and a PSI/KS drift monitor. No Docker is needed.
+An end-to-end churn scoring system. It covers leak-free preprocessing, baselines, a class-weighted LightGBM model, serialized artifacts, an online FastAPI service, a batch CLI, latency and throughput profiling, and a PSI/KS drift monitor. No Docker is needed.
 
 **Author:** Tejas Limaye (2025em1200003)
 
