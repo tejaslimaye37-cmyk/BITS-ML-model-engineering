@@ -1,0 +1,85 @@
+{
+  "dummy": {
+    "name": "Dummy prior",
+    "pr_auc": 0.2654364797728886,
+    "roc_auc": 0.5,
+    "recall_at_precision50": 0.0,
+    "threshold": 0.02,
+    "f1_macro": 0.20975883342680876,
+    "precision": 0.2654364797728886,
+    "recall": 1.0,
+    "cost": 1035.0,
+    "tn": 0,
+    "fp": 1035,
+    "fn": 0,
+    "tp": 374
+  },
+  "heuristic": {
+    "name": "Heuristic rule score",
+    "pr_auc": 0.5307921455475553,
+    "roc_auc": 0.8073393784391227,
+    "recall_at_precision50": 0.5855614973262032,
+    "threshold": 0.11,
+    "f1_macro": 0.6574827065695347,
+    "precision": 0.440745672436751,
+    "recall": 0.8850267379679144,
+    "cost": 635.0,
+    "tn": 615,
+    "fp": 420,
+    "fn": 43,
+    "tp": 331
+  },
+  "logreg": {
+    "name": "Logistic Regression (balanced)",
+    "pr_auc": 0.6331710424354436,
+    "roc_auc": 0.8425844118938748,
+    "recall_at_precision50": 0.8074866310160428,
+    "threshold": 0.3,
+    "f1_macro": 0.6505689746134653,
+    "precision": 0.43462017434620176,
+    "recall": 0.9331550802139037,
+    "cost": 579.0,
+    "tn": 581,
+    "fp": 454,
+    "fn": 25,
+    "tp": 349
+  },
+  "lgbm_unweighted": {
+    "name": "LightGBM (unweighted)",
+    "pr_auc": 0.6534845262636075,
+    "roc_auc": 0.8476633341083469,
+    "recall_at_precision50": 0.8288770053475936,
+    "threshold": 0.17,
+    "f1_macro": 0.684921213091569,
+    "precision": 0.46790299572039945,
+    "recall": 0.8770053475935828,
+    "cost": 603.0,
+    "tn": 662,
+    "fp": 373,
+    "fn": 46,
+    "tp": 328
+  },
+  "lgbm": {
+    "name": "LightGBM (weighted + calibrated)",
+    "pr_auc": 0.657008610043341,
+    "roc_auc": 0.848798728977757,
+    "recall_at_precision50": 0.8315508021390374,
+    "threshold": 0.15,
+    "f1_macro": 0.6689214371586107,
+    "precision": 0.45113788487282463,
+    "recall": 0.9010695187165776,
+    "cost": 595.0,
+    "tn": 625,
+    "fp": 410,
+    "fn": 37,
+    "tp": 337
+  },
+  "contact_nobody": {
+    "name": "Contact nobody",
+    "cost": 1870.0
+  },
+  "contact_everyone": {
+    "name": "Contact everyone",
+    "cost": 1035.0
+  }
+}

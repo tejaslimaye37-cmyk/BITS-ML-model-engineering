@@ -1,0 +1,180 @@
+{
+  "model_version": "1.0.0",
+  "trained_at": "2026-11-14T12:44:38+00:00",
+  "features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "numeric": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "numeric_ranges": {
+    "SeniorCitizen": [
+      0.0,
+      1.0
+    ],
+    "tenure": [
+      0.0,
+      72.0
+    ],
+    "MonthlyCharges": [
+      18.4,
+      118.75
+    ],
+    "TotalCharges": [
+      18.85,
+      8684.8
+    ]
+  },
+  "categorical_levels": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "No phone service",
+      "Yes"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ]
+  },
+  "thresholds": {
+    "dummy": 0.02,
+    "heuristic": 0.11,
+    "logreg": 0.3,
+    "lgbm_unweighted": 0.17,
+    "lgbm": 0.15
+  },
+  "threshold": 0.15,
+  "fallback": {
+    "table": {
+      "0": 0.029918404351767906,
+      "1": 0.10119695321001088,
+      "2": 0.30092592592592593,
+      "3": 0.5305039787798409,
+      "4": 0.7317073170731707
+    },
+    "prior": 0.26532544378698225,
+    "threshold": 0.11
+  },
+  "lgbm_params": {
+    "learning_rate": 0.05,
+    "num_leaves": 12,
+    "min_child_samples": 50,
+    "subsample": 0.6,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 5.0
+  },
+  "best_iteration": 86,
+  "scale_pos_weight": 2.768956289027654,
+  "validation_pr_auc": {
+    "dummy": 0.2654364797728886,
+    "heuristic": 0.5512749779274384,
+    "logreg": 0.6424141899636456,
+    "lgbm_unweighted": 0.6460628199179168,
+    "lgbm": 0.6533945012153419
+  },
+  "versions": {
+    "python": "3.12.16",
+    "sklearn": "1.9.1",
+    "lightgbm": "4.7.0"
+  }
+}

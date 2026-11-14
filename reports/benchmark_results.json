@@ -1,0 +1,48 @@
+{
+  "environment": {
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "python": "3.12.16",
+    "cpu_count": 1,
+    "note": "single uvicorn worker, client and server on the same machine"
+  },
+  "api": {
+    "requests": 1000,
+    "errors": 0,
+    "requests_per_sec": 74.30285699039146,
+    "client_ms": {
+      "mean": 13.441548198999328,
+      "p50": 13.357091000003152,
+      "p95": 18.57386169999984,
+      "p99": 21.66952567999033,
+      "max": 78.9783390000025
+    },
+    "server_ms": {
+      "mean": 11.794214,
+      "p50": 11.657499999999999,
+      "p95": 16.5022,
+      "p99": 19.317409999999995
+    }
+  },
+  "batch": {
+    "in_process_1000": {
+      "records": 1000,
+      "seconds": 0.027472660000000815,
+      "records_per_sec": 36399.82440724598
+    },
+    "in_process_10000": {
+      "records": 10000,
+      "seconds": 0.09462567500000318,
+      "records_per_sec": 105679.56318408997
+    },
+    "in_process_100000": {
+      "records": 100000,
+      "seconds": 0.9188794879999875,
+      "records_per_sec": 108828.199242599
+    },
+    "cli_end_to_end_100000": {
+      "records": 100000,
+      "seconds": 2.683792889000017,
+      "records_per_sec": 37260.699366880006
+    }
+  }
+}

@@ -1,0 +1,3 @@
+2026-11-14 12:46:48,215 INFO read 203 rows from data/sample_input.csv (model 1.0.0)
+2026-11-14 12:46:48,222 WARNING rejected 1 invalid rows, details in reports/sample_output.rejects.csv
+2026-11-14 12:46:48,256 INFO scored 202 rows (0 via fallback) in 0.73s = 276 records/sec, flagged 116, output reports/sample_output.csv

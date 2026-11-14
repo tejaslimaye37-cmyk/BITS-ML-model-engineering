@@ -1,0 +1,52 @@
+[
+ {
+  "case": "Valid record",
+  "status": 200,
+  "outcome": "score 0.683, source model, warnings: none"
+ },
+ {
+  "case": "Optional fields missing",
+  "status": 200,
+  "outcome": "score 0.689, source model, warnings: missing_or_invalid:TotalCharges, missing:gender, missing:InternetService, missing:PaymentMethod"
+ },
+ {
+  "case": "Unseen category (PaymentMethod=Crypto)",
+  "status": 200,
+  "outcome": "score 0.619, source model, warnings: unseen_category:PaymentMethod=Crypto"
+ },
+ {
+  "case": "Extreme outlier (MonthlyCharges=1e7, tenure=9999)",
+  "status": 200,
+  "outcome": "score 0.325, source model, warnings: clipped:tenure, clipped:MonthlyCharges"
+ },
+ {
+  "case": "Negative tenure",
+  "status": 422,
+  "outcome": "rejected: tenure"
+ },
+ {
+  "case": "Non-numeric MonthlyCharges",
+  "status": 422,
+  "outcome": "rejected: MonthlyCharges"
+ },
+ {
+  "case": "Required field missing (Contract)",
+  "status": 422,
+  "outcome": "rejected: Contract"
+ },
+ {
+  "case": "Unknown extra field",
+  "status": 422,
+  "outcome": "rejected: favourite_colour"
+ },
+ {
+  "case": "Empty body",
+  "status": 422,
+  "outcome": "rejected: tenure"
+ },
+ {
+  "case": "Model scoring raises an exception",
+  "status": 200,
+  "outcome": "score 0.530, source fallback_heuristic"
+ }
+]
